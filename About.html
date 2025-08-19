@@ -5,17 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About.html</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .nav-item:hover{
+            background-color: red;
+        }
+    </style>
 </head>
-<body>
+<body> <!--Header start-->
+    <header>
+       <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="images/imgfog.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Mobile Shoppee</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active bg-danger" href="About.html">About Us</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="photos.html">Photos</a></li>
+            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+            
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+    <!--Header End-->
+
     <!--1st eg grid-->
     <section class="m-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 p-3 ">
-                    <img src="images/imgvisapur.jpg" alt="visapur img is here">
+        <div class="p-2 bg-info-subtle text-info-emphasis rounded-5">
+            <div class="row border border-4 border border-white  rounded-5 m-2">
+                <div class="col-md-6 p-3">
+                    <img src="images/imgvisapur.jpg" class="img fluid border border-3 border border-success rounded-4" alt="visapur img is here">
                 </div>
-                <div class="col-md-5 mt-1 border border-dark p-3">   <!--border(for border dark)-->
-                    <h1>Visapur:-</h1>
+                <div class="col-md-6 mt-1  p-3 ">   <!--border(for border dark)-->
+                    <h1 class="text-success">Visapur:-</h1>
                     <p>Visapur Fort, located near Lonavala in the Pune district of Maharashtra, is a historic hill fort built in the early 18th century. Standing at an elevation of about 3,550 feet, it is much larger than its twin fort, Lohagad, and was strategically important for controlling the trade routes between the Konkan and Pune regions. The fort was originally constructed during the Bahmani rule and later became a part of the Maratha Empire under Chhatrapati Shivaji Maharaj. In 1818, during the Anglo-Maratha war, the British attacked and captured Visapur Fort, discovering large stores of food, weapons, and cannons inside. To weaken its strategic importance, they destroyed many of its fortifications. Today, the fort is a popular trekking destination, especially during the monsoon season when it is covered with lush greenery, waterfalls, and mist. Visitors can explore ancient caves, water cisterns, old walls, temples, and even a large grinding stone that was once used for making gunpowder.</p>
                 </div>
             </div>
@@ -24,20 +71,20 @@
 
     <!--2nd eg grid-->
 
-    <section class="m-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 border border-solid">
-                    <h1>Vision</h1>
+    <section class="m-5">
+        <div class="mb-2 bg-info-subtle text-info-emphasis rounded-4">
+            <div class="row m-1">
+                <div class="col-md-3 border border-dark rounded-3 p-3">
+                    <h1 class="text-success">Vision</h1>
                     <p>The vision of Visapur Fort was to establish a powerful and secure military base that could safeguard the Maratha Empire’s territories and trade routes. Positioned at a high altitude, the fort was envisioned as a watchtower of strength, giving the Marathas control over the surrounding valleys, ghats, and important connecting routes between Pune and the Konkan region. It reflected the vision of creating not just a defensive structure, but also a center of resource storage, protection, and authority. The fort symbolized the Marathas’ foresight in building strongholds that combined strategic advantage with long-term security, ensuring their dominance over the region.</p>
 
                 </div>
-                <div class="col-md-3 border border-solid">
-                    <h1>Mission</h1>
+                <div class="col-md-3 border border-dark rounded-3 p-3">
+                    <h1 class="text-success">Mission</h1>
                     <p>The mission of Visapur Fort was primarily strategic and military, serving as a stronghold to guard the important trade routes connecting the Konkan region with Pune during the Maratha period. Built in the early 18th century, it functioned as a defensive fort alongside its twin, Lohagad, providing security against enemy attacks and ensuring safe passage of goods and armies. The fort was also used to store food, weapons, and cannons, making it a vital supply base in times of war. Its elevated position allowed for clear surveillance of the surrounding valleys and ghats, enabling the Marathas to monitor enemy movements. Later, when the British captured it in 1818, they recognized its importance and destroyed parts of its structure to weaken its military value. Thus, the fort’s mission was not just to protect, but also to serve as a strategic command post for controlling the region.</p>
                 </div>
-                <div class="col-md-6 border border-solid">
-                    <h1>History</h1>
+                <div class="col-md-6 border border-dark rounded-3 p-3">
+                    <h1 class="text-success">History</h1>
                     <p>The Visapur Fort, located near Lonavala in Maharashtra, was built in the early 18th century by the Marathas during the reign of Chhatrapati Shivaji Maharaj, though some structures inside suggest even earlier origins under Bahmani rule. Together with its twin fort Lohagad, it played an important role in guarding trade routes between Pune and the Konkan region. The fort became especially significant during the rule of the Peshwas, serving as a stronghold and a storage center for food, weapons, and ammunition. In 1818, during the Third Anglo-Maratha War, the British launched an attack on Visapur Fort. After a fierce battle, they captured it and discovered large stockpiles of guns, cannons, and other supplies, making it clear how strategically important the fort was. Recognizing its dominance over Lohagad and the surrounding region, the British deliberately destroyed many of its fortifications to prevent future resistance. Today, although much of the fort is in ruins, it still stands as a reminder of the Marathas’ military strength and the turbulent history of the Deccan.</p>
                 </div>
                 

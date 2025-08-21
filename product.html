@@ -1,60 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous">
     <style>
         .nav-item:hover{
             background-color: red;
         }
+        .card:hover{
+          box-shadow: 4px 5px 4px blueviolet;
+        }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header start-->
     <header>
-       <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="images/imgfog.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Mobile Shoppee</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.html">About Us</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active bg-danger" href="product.html">Products</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gallery
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="photos.html">Photos</a></li>
-            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-            
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/imgfog.jpg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top"> Mobile Shoppee</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-danger"
+                  href="product.html">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"
+                      href="photos.html">Photos</a></li>
+                  <li><a class="dropdown-item"
+                      href="videos.html">Videos</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--Header End-->
-    <h1>This is product page</h1>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+
+    <!--services section start-->
+    <section class="mt-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <h2 class="mb-3 text-white d-flex justify-content-center">Our
+            Products</h2>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/imgbutterfly.jpg" class="card-img-top"
+                alt="butterfly img is here">
+              <div class="card-body">
+                <h5 class="card-title">Butterfly</h5>
+                <p class="card-text">Butterflies are colorful insects with two
+                  pairs of large, scaly wings that help in flight and display
+                  patterns.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#Butterfly">
+                  More Info....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/imgchilli.jpg" class="card-img-top"
+                alt="chilli img is here">
+              <div class="card-body">
+                <h5 class="card-title">Chilli</h5>
+                <p class="card-text">Chilli is a spicy fruit of the Capsicum
+                  plant, widely used as a spice and vegetable in cooking.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#chilli">
+                  More Info....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/imgfog.jpg" class="card-img-top"
+                alt="fog img is here">
+              <div class="card-body">
+                <h5 class="card-title">Fog</h5>
+                <p class="card-text">Fog is a thick cloud of tiny water droplets
+                  suspended near the ground, reducing visibility.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#fog">
+                  More Info....
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/imgwaterfall.jpg" class="card-img-top"
+                alt="Waterfall img is here">
+              <div class="card-body">
+                <h5 class="card-title">Waterfall</h5>
+                <p class="card-text">A waterfall is a natural flow of water
+                  dropping from a height, usually over a cliff or rock
+                  surface.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#waterfall">
+                  More Info....
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--services section end-->
+
+    <!-- Butterfly Modal start -->
+    <div class="modal fade" id="Butterfly" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Butterfly</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/imgbutterfly.jpg" class="img-fluid"
+                    alt="butterfly img is here">
+                </div>
+                <div class="col-md-6">
+                  <p>Butterflies are colorful insects belonging to the order
+                    Lepidoptera. They have two pairs of large, scaly wings that
+                    display beautiful patterns, making them one of the most
+                    admired creatures in nature. Their life cycle includes four
+                    stages: egg, caterpillar, pupa (chrysalis), and adult, which
+                    is known as complete metamorphosis. Butterflies play an
+                    important role in pollination by transferring pollen from
+                    flower to flower. Since they are highly sensitive to
+                    environmental changes, their presence often indicates a
+                    healthy ecosystem. Depending on the species, a butterfly’s
+                    lifespan can range from a few weeks to several months.</p>
+                  <ul>
+                    <li>Butterflies are insects belonging to the order
+                      Lepidoptera, known for their vibrant, patterned
+                      wings.</li>
+                    <li>They undergo complete metamorphosis: egg → caterpillar →
+                      pupa (chrysalis) → adult butterfly.</li>
+                    <li>Butterflies play a key role in pollination, helping
+                      flowers reproduce.</li>
+                    <li>They are very sensitive to environmental changes, so
+                      their presence indicates a healthy ecosystem.</li>
+                    <li>Lifespan varies from a few weeks to several months,
+                      depending on the species.</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="images/imgbutterfly.jpg" class="img-fluid"
+                        alt="butterfly img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgbutterfly.jpg" class="img-fluid"
+                        alt="butterfly img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgbutterfly.jpg" class="img-fluid"
+                        alt="butterfly img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgbutterfly.jpg" class="img-fluid"
+                        alt="butterfly img is here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Butterfly Modal end -->
+
+    <!-- chilli Modal start -->
+    <div class="modal fade" id="chilli" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Chilli</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/imgchilli.jpg" class="img-fluid"
+                    alt="chilli img is here">
+                </div>
+                <div class="col-md-6">
+                  <p>Chilli, scientifically known as Capsicum, is a fruit of the
+                    nightshade family (Solanaceae). It is widely used across the
+                    world as a spice, vegetable, and for making sauces. The hot
+                    taste of chilli comes from a chemical compound called
+                    capsaicin, which also has medicinal benefits such as pain
+                    relief and improving blood circulation. Chilli is a rich
+                    source of vitamin C, vitamin A, iron, and potassium, which
+                    boost immunity and improve digestion. Apart from adding
+                    flavor and heat to food, it is also used in traditional
+                    medicine for its health-promoting properties.</p>
+                  <ul>
+                    <li>Chilli (Capsicum) is a fruit of flowering plants in the
+                      nightshade family (Solanaceae).</li>
+                    <li>It contains capsaicin, a compound that gives it the
+                      spicy, burning taste.</li>
+                    <li>Rich in vitamin C, vitamin A, iron, and potassium, it
+                      boosts immunity and improves digestion.</li>
+                    <li>Widely used in cooking worldwide as a spice, vegetable,
+                      and for making sauces.</li>
+                    <li>Chilli also has medicinal uses: it helps with pain
+                      relief, metabolism boost, and blood circulation.</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="images/imgchilli.jpg" class="img-fluid"
+                        alt="Chilli img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgchilli.jpg" class="img-fluid"
+                        alt="Chilli img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgchilli.jpg" class="img-fluid"
+                        alt="Chilli img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgchilli.jpg" class="img-fluid"
+                        alt="Chilli img is here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- chilli Modal end -->
+
+    <!-- fog Modal start -->
+    <div class="modal fade" id="fog" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Fog</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/imgfog.jpg" class="img-fluid"
+                    alt="fog img is here">
+                </div>
+                <div class="col-md-6">
+                  <p>Fog is a natural weather phenomenon that occurs when tiny
+                    water droplets or ice crystals remain suspended in the air
+                    close to the ground, reducing visibility. It is essentially
+                    a low-lying cloud that forms when the air cools to its dew
+                    point, causing water vapor to condense. There are different
+                    types of fog such as radiation fog, advection fog, valley
+                    fog, and evaporation fog, each formed under specific weather
+                    conditions. Fog is common in early mornings, near rivers,
+                    lakes, coastal areas, and valleys. While it creates a calm
+                    and mysterious atmosphere, it can also be dangerous for
+                    transportation as it reduces visibility.</p>
+                  <ul>
+                    <li>Fog is a low-lying cloud made of tiny water droplets or
+                      ice crystals suspended near the ground.</li>
+                    <li>It forms when air temperature cools to its dew point,
+                      causing water vapor to condense.</li>
+                    <li>Types of fog include radiation fog, advection fog,
+                      valley fog, and evaporation fog.</li>
+                    <li>Fog reduces visibility, often disrupting transport
+                      (roads, ships, flights).</li>
+                    <li>It usually occurs in cool mornings, coastal regions,
+                      valleys, or near water bodies.</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="images/imgfog.jpg" class="img-fluid"
+                        alt="fog img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgfog.jpg" class="img-fluid"
+                        alt="fog img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgfog.jpg" class="img-fluid"
+                        alt="fog img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgfog.jpg" class="img-fluid"
+                        alt="fog img is here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fog Modal end -->
+
+    <!-- Waterfall Modal start -->
+    <div class="modal fade" id="waterfall" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Waterfall</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/imgwaterfall.jpg" class="img-fluid"
+                    alt="waterfall img is here">
+                </div>
+                <div class="col-md-6">
+                  <p>A waterfall is a beautiful natural feature where water
+                    flows over a vertical drop or a steep cliff in a river or
+                    stream. Waterfalls are formed due to the erosion of softer
+                    rocks under a riverbed, leaving the harder rocks behind to
+                    create a drop. They can be of various types such as plunge,
+                    cascade, horsetail, tiered, or block depending on their flow
+                    and structure. Famous examples include Niagara Falls in
+                    North America, Angel Falls in Venezuela, and Jog Falls in
+                    India. Apart from being popular tourist attractions,
+                    waterfalls also play a role in generating hydroelectric
+                    power and enhancing natural biodiversity in their
+                    surroundings.</p>
+                  <ul>
+                    <li>A waterfall is a natural feature where water flows over
+                      a vertical drop or cliff in a river or stream.</li>
+                    <li>Formed due to erosion, where softer rocks erode faster
+                      than harder rocks, creating a drop.</li>
+                    <li>Waterfalls can be plunge type, cascade, tiered,
+                      horsetail, or block depending on flow style.</li>
+                    <li>Famous waterfalls include Niagara Falls (USA/Canada),
+                      Angel Falls (Venezuela), Jog Falls (India).</li>
+                    <li>Apart from scenic beauty, waterfalls help in hydropower
+                      generation and attract tourism.</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="images/imgwaterfall.jpg" class="img-fluid"
+                        alt="waterfall img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgwaterfall.jpg" class="img-fluid"
+                        alt="waterfall img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgwaterfall.jpg" class="img-fluid"
+                        alt="waterfall img is here">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/imgwaterfall.jpg" class="img-fluid"
+                        alt="waterfall img is here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Waterfall Modal end -->
+    
+
+
+    <footer class="bg-primary py-5 mt-5">
+    <div class="container text-light text-center">
+      <h2 class="displat-5 mb-3">Visapur</h2>
+      <small class="text-white-50">&copy; All rights reserved.</small>
+    </div>
+   </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
